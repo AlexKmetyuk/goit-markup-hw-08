@@ -1,0 +1,25 @@
+.logo {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  color: $title-text-color;
+
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+}
+
+.logo__web {
+  color: $selection-text-color;
+}
+
+.logo__studio--black {
+  color: $title-text-color;
+}
+
+.logo__studio--white {
+  color: $white;
+}

@@ -1,0 +1,42 @@
+body {
+  color: $primary-text-color;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.list {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.link {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+.visualy-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.conteiner {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 1200px;
+}
+
+.flexbox {
+  display: flex;
+}

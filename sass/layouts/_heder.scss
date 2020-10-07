@@ -1,0 +1,9 @@
+header {
+  border-bottom: 1px solid #ececec;
+
+  background-color: $white;
+}
+
+.site-nav__item .current {
+  color: $selection-text-color;
+}
