@@ -1,11 +1,21 @@
 .our-projects {
   margin: 0px auto;
-  padding: 94px 0px;
+  padding: 60px 0;
+
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
 }
 
 .sort-btn {
-  justify-content: center;
   display: flex;
+  flex-wrap: wrap;
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
 
 .sort-btn__item-sort {
@@ -38,6 +48,10 @@
 
     color: $white;
     background-color: $selection-text-color;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 15px;
   }
 }
 

@@ -6,7 +6,7 @@
   text-align: center;
   height: 600px;
   margin: 0 auto;
-  margin-bottom: 94px;
+  margin-bottom: 60px;
 
   color: $white;
   background-color: $bg-footer;
@@ -18,12 +18,18 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  font-style: normal;
-  font-weight: 900;
-  font-size: 44px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 94px;
+  }
 }
 
 .hero__title {
   margin: 0px;
   margin-bottom: 30px;
+
+  font-size: 26px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+  }
 }

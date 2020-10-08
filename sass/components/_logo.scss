@@ -1,15 +1,25 @@
 .logo {
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  display: inline-block;
 
   color: $title-text-color;
 
   font-family: Raleway;
-  font-style: normal;
   font-weight: bold;
   font-size: 26px;
   letter-spacing: 0.03em;
+
+  @media screen and (max-width: 768px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 
 .logo__web {

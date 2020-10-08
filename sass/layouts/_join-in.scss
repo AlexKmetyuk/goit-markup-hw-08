@@ -1,9 +1,15 @@
 footer .join-in {
+  display: inline-block;
   padding: 0;
-  margin: 0;
-  align-self: baseline;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+    margin-left: 70px;
+    text-align: left;
+  }
 }
 
 .join-in__title {
@@ -13,11 +19,7 @@ footer .join-in {
 
   color: $white;
 
-  font-family: Roboto;
-  font-style: normal;
   font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }

@@ -1,25 +1,49 @@
 .navigation {
-  display: flex;
-  margin-right: auto;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-right: 84px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 305px;
+  }
 }
 
 .site-nav {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (max-width: 768px) {
+    margin: 60px auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.site-nav__item {
+  position: relative;
+
+  @media screen and (max-width: 768px) {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
 }
 
 .site-nav__item:not(:last-child) {
-  margin-right: 50px;
+  @media screen and (min-width: 768px) {
+    margin-right: 50px;
+  }
 }
 
 .site-nav__link {
   display: block;
-  padding: 32px 0px;
+  padding: 8px 0px;
 
   color: $title-text-color;
 
-  font-style: normal;
   font-weight: 500;
-  font-size: 14px;
   letter-spacing: 0.02em;
 
   transition-property: color;
@@ -31,9 +55,10 @@
   .logo:focus {
     color: $selection-text-color;
   }
-}
-.site-nav__item {
-  position: relative;
+
+  @media screen and (min-width: 768px) {
+    padding: 32px 0px;
+  }
 }
 
 .site-nav .current::after {
@@ -46,4 +71,57 @@
   border-radius: 2px;
 
   background-color: $selection-text-color;
+}
+
+.menu-nav {
+  font-size: 18px;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: $white;
+    border-top: solid 1px #ececec;
+    z-index: 10;
+    &.is-open {
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+
+    font-size: 12px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
+}
+
+.menu-button {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  padding: 10px;
+  right: 0;
+  top: 0;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-button .icon-close {
+  display: none;
+}
+
+.menu-button.is-open .icon-close {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
 }

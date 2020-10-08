@@ -1,7 +1,22 @@
 header {
+  position: relative;
+
   border-bottom: 1px solid #ececec;
 
   background-color: $white;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.page-header {
+  // position: relative;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .site-nav__item .current {

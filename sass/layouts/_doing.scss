@@ -1,6 +1,13 @@
 .doing {
-  padding: 94px 0px;
-  justify-content: center;
+  padding: 60px 0;
+
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
+
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
 }
 
 .doing__list {

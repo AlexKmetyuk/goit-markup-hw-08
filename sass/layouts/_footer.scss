@@ -6,8 +6,24 @@ footer {
   background-color: $bg-footer;
 }
 
+.footer {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
 .footer-info {
-  align-self: baseline;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+    text-align: left;
+  }
 }
 
 .page-footer .conteiner .logo {
@@ -28,4 +44,13 @@ footer {
 
   line-height: 24px;
   letter-spacing: 0.03em;
+}
+
+.flexbox-footer {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
 }
