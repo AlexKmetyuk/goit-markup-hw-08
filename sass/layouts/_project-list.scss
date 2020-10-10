@@ -101,6 +101,7 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .overlay > p {
   display: flex;
   padding: 0;
@@ -108,11 +109,19 @@
 
   color: $white;
 
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.03em;
+
+  @media screen and (max-width: 480px) {
+    line-height: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+  }
 }
 
 .overlay code {
