@@ -381,7 +381,6 @@ header {
   text-align: center;
   height: 400px;
   margin: 0 auto;
-  margin-bottom: 60px;
   color: #ffffff;
   background-color: #2f303a;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/background-mob.jpg);
@@ -394,6 +393,13 @@ header {
     margin-bottom: 94px;
     height: 600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/backgraund.jpg);
+    background-size: 1600px 600px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../image/background@2.jpg);
   }
 }
 
@@ -427,6 +433,7 @@ header {
 @media screen and (max-width: 1200px) {
   .our-features {
     padding-bottom: 60px;
+    padding-top: 60px;
   }
 }
 
@@ -1111,15 +1118,18 @@ footer .join-in {
 
 .modal {
   background-color: #ffffff;
+  width: calc(100% - 30px);
+  margin: 0 auto;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .modal {
     position: absolute;
     top: 50%;
     left: 50%;
     width: 450px;
     height: 609px;
+    margin: 0;
     transform: translate(-50%, -50%) scale(1);
   }
 }
@@ -1269,9 +1279,13 @@ footer .join-in {
   }
 }
 
+.checkbox__text {
+  margin: 0;
+  padding: 0;
+}
+
 .checkbox__link {
   border-bottom: solid 1px #2196f3;
-  margin-left: 5px;
   color: #2196f3;
   line-height: 0.85;
 }
@@ -1349,6 +1363,7 @@ footer .join-in {
 .projects {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin-top: 50px;
 }
 
@@ -1359,8 +1374,8 @@ footer .join-in {
 
 .projects__item {
   display: block;
-  margin-right: 30px;
   margin-bottom: 30px;
+  width: 100%;
   border: 1px solid #eeeeee;
   transition-property: all;
   transition-duration: 250ms;
@@ -1375,14 +1390,18 @@ footer .join-in {
   .projects__item {
     width: calc(100% / 2 - 30px);
   }
-  .projects__item:nth-child(2n) {
-    margin-right: 0;
+  .projects__item:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+  .projects__item:not(:nth-child(2n)) {
+    margin-right: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .projects__item {
     width: 370px;
+    margin-right: 30px;
   }
   .projects__item:nth-child(3n) {
     margin-right: 0px;

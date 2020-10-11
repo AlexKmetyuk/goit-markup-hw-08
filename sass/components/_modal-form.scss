@@ -126,9 +126,13 @@
   }
 }
 
+.checkbox__text {
+  margin: 0;
+  padding: 0;
+}
+
 .checkbox__link {
   border-bottom: solid 1px $selection-text-color;
-  margin-left: 5px;
 
   color: $selection-text-color;
 

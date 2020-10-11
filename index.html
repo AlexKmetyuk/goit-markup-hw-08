@@ -26,7 +26,7 @@
         >
         <button
           type="button"
-          class="menu-button is-open"
+          class="menu-button"
           aria-expanded="false"
           data-menu-button
         >
@@ -45,7 +45,7 @@
             ></use>
           </svg>
         </button>
-        <div class="menu-nav is-open" data-menu>
+        <div class="menu-nav" data-menu>
           <nav class="navigation">
             <ul class="list site-nav">
               <li class="site-nav__item">
@@ -543,8 +543,12 @@
                 type="checkbox"
                 name="agree"
               /><span class="checkbox-field__icon"></span>
-              Соглашаюсь с рассылкой и принимаю
-              <a href="" class="link checkbox__link">Условия договора</a></label
+              <span class="checkbox__text"
+                >Соглашаюсь с рассылкой и принимаю
+                <a href="" class="link checkbox__link"
+                  >Условия договора</a
+                ></span
+              ></label
             >
           </div>
           <button class="btn modal__btn-submit">Отправить</button>
