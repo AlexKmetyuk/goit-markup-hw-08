@@ -91,7 +91,7 @@ header {
   letter-spacing: 0.03em;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .logo {
     padding-top: 16px;
     padding-bottom: 16px;
@@ -141,7 +141,7 @@ header {
   align-items: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .site-nav {
     margin: 60px auto;
   }
@@ -157,7 +157,7 @@ header {
   position: relative;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .site-nav__item:not(:last-child) {
     margin-bottom: 32px;
   }
@@ -206,7 +206,7 @@ header {
   font-size: 18px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .menu-nav {
     display: none;
     position: absolute;
@@ -270,14 +270,14 @@ header {
   flex-direction: column;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .contacts {
     align-items: center;
     padding-bottom: 60px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .contacts {
     margin: auto 0;
   }
@@ -289,7 +289,7 @@ header {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .contacts__item:not(:last-child) {
     margin-bottom: 16px;
   }
@@ -339,7 +339,7 @@ header {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .icon-phone {
     width: 10px;
     height: 14px;
@@ -356,7 +356,7 @@ header {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .icon-email {
     width: 14px;
     height: 10px;
@@ -403,6 +403,12 @@ header {
   }
 }
 
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero .box {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/mobile/background@2.jpg);
+  }
+}
+
 .hero__title {
   margin: 0px;
   margin-bottom: 30px;
@@ -430,7 +436,7 @@ header {
   cursor: pointer;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .our-features {
     padding-bottom: 60px;
     padding-top: 60px;
@@ -536,7 +542,7 @@ header {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .doing {
     display: none;
   }
@@ -994,7 +1000,7 @@ footer .join-in {
   text-align: center;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .subscribe {
     width: 100%;
   }
@@ -1248,8 +1254,8 @@ footer .join-in {
 
 .checkbox-field__icon {
   display: inline-block;
-  width: 16px;
-  height: 15px;
+  min-width: 16px;
+  min-height: 15px;
   margin-right: 7px;
   border: solid 2px #212121;
   border-radius: 2px;
@@ -1312,7 +1318,7 @@ footer .join-in {
   flex-wrap: wrap;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .sort-btn {
     flex-wrap: wrap;
   }
@@ -1350,7 +1356,7 @@ footer .join-in {
   background-color: #2196f3;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .sort-btn__item-sort {
     margin-bottom: 15px;
   }
@@ -1363,7 +1369,7 @@ footer .join-in {
 .projects {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  margin: 0 auto;
   margin-top: 50px;
 }
 
@@ -1386,7 +1392,7 @@ footer .join-in {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .projects__item {
     width: calc(100% / 2 - 30px);
   }
@@ -1416,7 +1422,7 @@ footer .join-in {
   transform: translatey(0);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .projects__item img {
     width: 100%;
   }
@@ -1473,7 +1479,7 @@ footer .join-in {
   letter-spacing: 0.03em;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .overlay > p {
     line-height: 20px;
   }
